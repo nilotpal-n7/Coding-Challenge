@@ -8,7 +8,6 @@ def fft_1(x, inv=False):
     if(N <= 1):
         return x
     
-    #Something missing here!?
     e_k = fft_1(x[0::2], inv)
     o_k = fft_1(x[1::2], inv)
 
@@ -68,7 +67,3 @@ plt.title("Masked Frequencies Magnitude")
 plt.imshow(np.log(1 + np.abs(compressed)), cmap="gray")
 plt.tight_layout()
 plt.show()
-
-cv.imshow(r"Original: 100% of Original", image)
-cv.imshow(f"Compressed: {percent}% of Original", img_ifft_unp)
-cv.waitKey(0)
