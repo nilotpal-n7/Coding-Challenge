@@ -36,7 +36,7 @@ img[:c_o, :r_o] = image[:c_o, :r_o]
 img = img.astype(float)
 print(image_o.shape, image.shape, img.shape)
 
-percent = 10
+percent = 2
 a = int(r / 20 * percent ** 0.5)
 b = int(c / 20 * percent ** 0.5)
 r_l, r_r = r // 2 - a, r // 2 + a
